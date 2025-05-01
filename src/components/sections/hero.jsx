@@ -110,7 +110,7 @@ export function Hero() {
 
       <motion.div
         style={{ opacity, y }}
-        className="container max-w-6xl mx-auto flex flex-col items-center md:items-start text-center md:text-left relative z-10 w-full"
+        className="container max-w-6xl mx-auto flex flex-col items-center md:items-start  md:text-left relative z-10 w-full"
       >
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -149,7 +149,7 @@ export function Hero() {
           </h2>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2 }}
@@ -200,7 +200,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.6 }}
-              className="flex flex- items-center justify-center md:justify-start gap-3 sm:gap-4 mb-4 sm:mb-12 md:mb-6 flex-wrap mt-6"
+              className="flex flex- items-center  md:justify-start gap-3 sm:gap-4 mb-4 sm:mb-12 md:mb-6 flex-wrap mt-6"
             >
               {personalData.socialLinks.map((link, index) => (
                 <a
@@ -226,7 +226,7 @@ export function Hero() {
               </Button>
             </div>
           </div>
-        </motion.p>
+        </motion.div>
       </motion.div>
     </section>
   );
